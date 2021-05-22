@@ -1,6 +1,5 @@
 //--------------------------
 //Demo for illustrating Class inheritance concepts
-// Ramdas M (www.verificationexcellence.in)
 //--------------------------
 class Packet;
 
@@ -58,7 +57,7 @@ module test;
    $display("success= %b err_pkt1.src_addr=%h  err_pkt.src_addr=%h", success, err_pkt1.src_addr, err_pkt.src_addr);
    pkt1 = new(); //base class object
    success = $cast(err_pkt1, pkt1); //since base class handle is referring to derived class object, ok to assign to another derived class obj
-   $display("success= %b attempt to cast base class object to a derviced class handle", success);
+   $display("success= %b attempt to cast base class object to a derived class handle", success);		//CANNOT CAST BASE CLASS HANDLE TO DERIVED CLASS
  end
 
 endmodule

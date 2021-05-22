@@ -2,7 +2,6 @@
 //A simple ethernet packet class
 //Example for class definition, members
 // Creating objects
-// @ Ramdas M  (www.verificationexcellence.in)
 //---------------------
 class eth_packet_c;
 
@@ -15,6 +14,10 @@ class eth_packet_c;
   byte pkt_full[$];
 
   function new();
+	fill_pkt_data();
+	src_addr = $urandom();
+	dst_addr = $urandom();
+	fill_pkt_crc();
   endfunction
 
   function void fill_pkt_data();

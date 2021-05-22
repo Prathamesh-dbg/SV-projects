@@ -4,7 +4,6 @@
 // This can be compiled as a stand alone file
 // Students can experiment  by compiling and simulating this file
 // and observing the behavior
-//   @ - Ramdas M
 //------------------------------------
 module test;
 

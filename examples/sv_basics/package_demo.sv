@@ -2,13 +2,20 @@
 // Package example
 //--------------------------
 package common_utils_pkg;
-  parameter proj_name = "sv_demo";
+  parameter proj_name = "package_demo";
   typedef enum {ADD, SUB, MUL} opcodes_t;
 
   class instruction_c;
     rand opcodes_t opcode;
     rand bit[31:0]  op0; 
-    rand bit[31:0]  op1; 
+    rand bit[31:0]  op1;
+	
+	function new();
+		op0 = $urandom();
+		op1 = $urandom();
+		opcode = SUB;
+	endfunction
+	
     function display_instr();
       $display("opcode =%s  op0=%0h op1=%0h",opcode.name(), op0, op1);
     endfunction

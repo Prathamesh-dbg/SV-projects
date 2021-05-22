@@ -1,13 +1,14 @@
 //-----------------
 // Basic parent child class example
-// Ramdas M (www.verificationexcellence.in)
 //-----------------
 class Packet;
   bit [31:0] addr;
   bit err=0;
   function int get_addr();
   //virtual function int get_addr();
-    get_addr = 'hABCD;
+	addr = 'hABCD;
+    //get_addr = 'hABCD;
+	return addr;
   endfunction
 
 endclass
@@ -15,7 +16,9 @@ endclass
 class ErrPacket extends Packet; 
   bit err=1;
   function int get_addr();
-    get_addr = 'hCDEF;
+    //get_addr = 'hCDEF;
+	addr = 'hCDEF;
+	return addr;
   endfunction
 endclass
 
