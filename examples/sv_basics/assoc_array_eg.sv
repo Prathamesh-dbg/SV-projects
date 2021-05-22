@@ -1,6 +1,5 @@
 //----------
 // Sample code to illustrate usage of associative arrays
-//  - Ramdas M  (www.verificationexcellence.in)
 //----------
 module test;
 
@@ -12,6 +11,9 @@ function void test_assoc_array();
   assoc_test["A"] = 1; 
   assoc_test["B"] = 2; 
   assoc_test["C"] = 3; 
+  assoc_test["PRATHAM"] = 450; 
+  assoc_test["BHAT"] = 720; 
+  assoc_test["GENERAL"] = 65536; 
   if(assoc_test.first(indx)) begin
     do begin
       $display("assoc_test[%s]=%0d",indx,assoc_test[indx]);

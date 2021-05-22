@@ -1,6 +1,5 @@
 //--------------------------
 // Automatic/reentrant function
-// Mayur Kubavat
 //--------------------------
 
 module test;

@@ -1,0 +1,22 @@
+{C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/automatic_function.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/automatic_function.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/assoc_array_eg.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/assoc_array_eg.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/polymorphism.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics/polymorphism.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module polymorphism
+
+Top level modules:
+	polymorphism
+
+} {} {}}

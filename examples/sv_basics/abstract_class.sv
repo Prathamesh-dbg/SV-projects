@@ -4,7 +4,8 @@
 // classes, primary role is to define set of common methods. 
 // For e.g. uvm_object class in UVM BCL is abstract class.
 //
-// - Mayur Kubavat
+// You cannot create an object of an abstract class. 
+// You cannot call any functions in the abstract class
 //---------------------------------
 
 
@@ -29,6 +30,7 @@ module test;
 
 	initial
 	begin
+		//a_h = new();
 		b_h = new();
 		b_h.my_display();
 
