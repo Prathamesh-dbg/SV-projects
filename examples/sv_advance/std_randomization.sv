@@ -12,6 +12,6 @@ module test;
          $display("Nibble Value is: %0d", nibble);
       end
 
-   end //initial
+   end
 
-endmodule //test
+endmodule

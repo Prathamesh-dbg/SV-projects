@@ -1,16 +1,16 @@
-{C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv} {2 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv}
+{C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/callbacks.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/callbacks.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv} {2 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling package soft_constraint_sv_unit
 -- Compiling module test
 ** Warning: C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv(13): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 
-
-Top level modules:
-	test
-
-} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/callbacks.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/callbacks.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module test
 
 Top level modules:
 	test
@@ -23,8 +23,9 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	test
 
-} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/std_randomization.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/std_randomization.sv}
+} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling package SingletonObject_sv_unit
 -- Compiling module test
 
 Top level modules:
@@ -37,13 +38,5 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	test
-
-} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv}
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling package SingletonObject_sv_unit
--- Compiling module singleton_pattern
-
-Top level modules:
-	singleton_pattern
 
 } {} {}}

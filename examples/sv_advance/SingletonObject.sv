@@ -21,7 +21,7 @@ class MyObject;
 endclass //MyObject
 
 // Top Module      
-module singleton_pattern;
+module test;
 
    MyObject anObject;
    MyObject firstObj, secondObj;
@@ -40,6 +40,6 @@ module singleton_pattern;
       $display("Object Status | Second Object State: %s", secondObj.myState);
    end
 
-endmodule //singleton_pattern
+endmodule
 
 
