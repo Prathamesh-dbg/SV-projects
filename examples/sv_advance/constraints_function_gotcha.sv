@@ -8,12 +8,13 @@ class constraints_gotcha;
 	endfunction
 	
 	constraint c1{	
-		get(a) inside {[50:200]}; // Gotcha - Intended value a inside 50..200
+		//get(a) inside {[50:200]}; // Gotcha - Intended value a inside 50..200 -- WHY?
+		a inside {[50:200]};
 	}
 
 endclass
 	
-module top;
+module test;
 
 	constraints_gotcha cg_h;
 	

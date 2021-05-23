@@ -1,0 +1,27 @@
+{C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/RAL example/tbench_top.sv} {2 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/RAL example/tbench_top.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.2c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+** Warning: dma_reg_seq.sv(4): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+
+-- Compiling interface dma_if
+** Warning: dma_reg_seq.sv(4): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+
+-- Compiling package tbench_top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling package dma_ral_pkg
+-- Compiling package dma_pkg
+-- Importing package dma_ral_pkg
+** Warning: dma_reg_seq.sv(4): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+
+-- Compiling interface dma_if
+-- Compiling module tbench_top
+-- Importing package dma_pkg
+** Warning: dma_reg_seq.sv(4): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+
+-- Compiling module DMA
+
+Top level modules:
+	tbench_top
+
+} {} {}}

@@ -20,10 +20,12 @@ module test;
         //Pre-planned hooks in Driver class
         //By default does nothing.
         task pre_run();
+			$display("\n DRIVER:: PRE_RUN");
             drv_cb_h.pre_run();
         endtask
 
         task post_run();
+			$display("\n DRIVER:: POST_RUN");
             drv_cb_h.post_run();
         endtask
 
@@ -33,7 +35,7 @@ module test;
             pre_run();
 
             //Protocol specific logic
-            $display("Driver protocol execution.\n");
+            $display("\n DRIVER:: RUN");
 
             //Hook2
             post_run();
@@ -45,8 +47,12 @@ module test;
     class test extends Driver_cbs;
 
         task pre_run();
-            $display("\n\nExecute test specific functionality.\n");
-        endtask 
+            $display("\n TEST:: PRE_RUN");
+        endtask
+		
+		task post_run();
+            $display("\n TEST:: POST_RUN");
+        endtask
 
     endclass //test
 

@@ -1,0 +1,191 @@
+m255
+K4
+z2
+13
+cModel Technology
+dC:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_basics
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Xconstraints_function_gotcha_sv_unit
+Z0 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+VbVgMB^F>n_KggGa7CLGfV3
+r1
+31
+IbVgMB^F>n_KggGa7CLGfV3
+S1
+Z1 dC:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance
+w1621702656
+8C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/constraints_function_gotcha.sv
+FC:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/constraints_function_gotcha.sv
+L0 2
+Z2 OL;L;10.2c;57
+Z3 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 `@QP95ODzS<?mDJ<JPGc`0
+!s108 1621702669.710000
+!s107 C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/constraints_function_gotcha.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/constraints_function_gotcha.sv|
+!s85 0
+!i10b 1
+!i103 1
+!i111 0
+Xshallow_vs_deep_copy_sv_unit
+Z4 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+V``:8WI<mU3`P>OTAoDPAZ3
+r1
+!s85 0
+31
+I``:8WI<mU3`P>OTAoDPAZ3
+S1
+R1
+Z5 w1621750728
+Z6 8shallow_vs_deep_copy.sv
+Z7 Fshallow_vs_deep_copy.sv
+L0 8
+R2
+Z8 !s108 1621750742.831000
+Z9 !s107 shallow_vs_deep_copy.sv|
+Z10 !s90 -reportprogress|300|shallow_vs_deep_copy.sv|
+Z11 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 DDjA4TUoNGhB@ACOgl>8m2
+!i10b 1
+!i103 1
+!i111 0
+vsingleton_pattern
+R4
+DXx4 work 23 SingletonObject_sv_unit 0 22 P`bQGLhz>i6;[HJkg?DOd1
+Z12 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+31
+I02FWLl33L9obmnm=o7d?P0
+S1
+R1
+Z13 w1621252359
+Z14 8C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv
+Z15 FC:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv
+L0 24
+R2
+Z16 !s108 1621701545.742000
+Z17 !s107 C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv|
+Z18 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/SingletonObject.sv|
+R3
+!s100 F3lNW_a`4aGUlW@JUL3W73
+!s105 SingletonObject_sv_unit
+!s85 0
+!i10b 1
+!i111 0
+XSingletonObject_sv_unit
+R4
+VP`bQGLhz>i6;[HJkg?DOd1
+r1
+31
+IP`bQGLhz>i6;[HJkg?DOd1
+S1
+R1
+R13
+R14
+R15
+L0 2
+R2
+R16
+R17
+R18
+R3
+n@singleton@object_sv_unit
+!s100 W]1mB7D^X<i4lQIFb4O6h0
+!s85 0
+!i10b 1
+!i103 1
+!i111 0
+vsoft_constr
+R4
+DXx4 work 23 soft_constraint_sv_unit 0 22 _[dh:]mj4No?mS>ioHOD@3
+R12
+r1
+31
+I1ga=Qa0=Ze^I03^9h>=>[3
+S1
+R1
+w1621702026
+8soft_constraint.sv
+Fsoft_constraint.sv
+L0 6
+R2
+R11
+!s105 soft_constraint_sv_unit
+!s107 soft_constraint.sv|
+!s90 -reportprogress|300|soft_constraint.sv|
+!s100 A`lkXWGL86TO:?c89zMij1
+!s108 1621702080.748000
+!s85 0
+!i10b 1
+!i111 0
+Xsoft_constraint_sv_unit
+R4
+VR1XDAMbBV]AZMReGomOKO0
+r1
+31
+IR1XDAMbBV]AZMReGomOKO0
+S1
+R1
+w1621702320
+8C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv
+FC:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv
+L0 1
+R2
+R3
+!s108 1621702331.093000
+!s107 C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/soft_constraint.sv|
+!s100 fc9fgbFdTb7PGmOjZ9TKP2
+!s85 0
+!i10b 1
+!i103 1
+!i111 0
+vtest
+R4
+DXx4 work 28 shallow_vs_deep_copy_sv_unit 0 22 ``:8WI<mU3`P>OTAoDPAZ3
+R12
+r1
+31
+IMceJig9[n?gIPEL@eflBa1
+S1
+R1
+R5
+R6
+R7
+L0 52
+R2
+R8
+R9
+R10
+R11
+!s85 0
+!s100 <406bo0@fJA`HEKF8okEm1
+!s105 shallow_vs_deep_copy_sv_unit
+!i10b 1
+!i111 0
+vtop
+R4
+DXx4 work 35 constraints_function_gotcha_sv_unit 0 22 1>DoE`THMaUMWbWKVQSW;0
+R12
+r1
+31
+II`dYAI:CRR9HZi2;447n`0
+S1
+R1
+R13
+8constraints_function_gotcha.sv
+Fconstraints_function_gotcha.sv
+L0 16
+R2
+R11
+!s105 constraints_function_gotcha_sv_unit
+!s107 constraints_function_gotcha.sv|
+!s90 -reportprogress|300|constraints_function_gotcha.sv|
+!s100 iNFf6UP@k5BIc]0N]bXCG0
+!s108 1621702406.720000
+!s85 0
+!i10b 1
+!i111 0
