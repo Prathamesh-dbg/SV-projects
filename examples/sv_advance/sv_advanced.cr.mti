@@ -15,6 +15,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	test
 
+} {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/std_randomization.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/std_randomization.sv}
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test
+
+Top level modules:
+	test
+
 } {} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/shallow_vs_deep_copy.sv} {1 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/examples/sv_advance/shallow_vs_deep_copy.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling package shallow_vs_deep_copy_sv_unit

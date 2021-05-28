@@ -28,7 +28,7 @@ module DMA
   //Reset 
   always @(posedge reset) begin //{
     intr        <= 0;
-    control     <= 0;
+    control     <= 0; 
     io_address  <= 0;
     mem_address <= 0;
   end //}
@@ -45,7 +45,7 @@ module DMA
     end //}
     else if (!wr_en & valid) begin//{
       
-           if (addr == 32'h400) t_data = intr         ;
+           if (addr == 32'h400)   = intr         ;
       else if (addr == 32'h404) t_data = control      ;
       else if (addr == 32'h408) t_data = io_address   ;
       else if (addr == 32'h40C) t_data = mem_address  ;
