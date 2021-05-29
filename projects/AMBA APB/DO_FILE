@@ -1,0 +1,16 @@
+vlog -work work -vopt -sv +define+SEQ_COUNT=55 APB_tb_top.sv
+vsim -novopt +UVM_TESTNAME=random_valid_ready_test TB_TOP
+add wave -position insertpoint  \
+sim:/TB_TOP/apb_if/PADDR \
+sim:/TB_TOP/apb_if/PCLK \
+sim:/TB_TOP/apb_if/PENABLE \
+sim:/TB_TOP/apb_if/PPROT \
+sim:/TB_TOP/apb_if/PRDATA \
+sim:/TB_TOP/apb_if/PREADY \
+sim:/TB_TOP/apb_if/PRESETn \
+sim:/TB_TOP/apb_if/PSEL \
+sim:/TB_TOP/apb_if/PSLVERR \
+sim:/TB_TOP/apb_if/PSTRB \
+sim:/TB_TOP/apb_if/PWDATA \
+sim:/TB_TOP/apb_if/PWRITE
+run -all
