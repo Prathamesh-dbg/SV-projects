@@ -10,12 +10,3 @@ There are two main sub directories in this repository
      This directory contains several system verilog examples that you can refer through
 2) project 
     This directory will eventually contain short projects that takes a smaller design and builds a complete verification testbench around the same.
-    For now - the only one project is a simple 2x2 port ethernet switch (dut and env)
-    
-    
-For more specific details on how to run simulations - see the README files in  examples/project sub-directories    
-
-Thanks
-VerificationExcellence
-Learn more  www.verificationexcellence.in
-Contact  verif.excellence@gmail.com for questions
