@@ -13,4 +13,3 @@ sim:/TB_TOP/apb_if/PSLVERR \
 sim:/TB_TOP/apb_if/PSTRB \
 sim:/TB_TOP/apb_if/PWDATA \
 sim:/TB_TOP/apb_if/PWRITE
-run -all

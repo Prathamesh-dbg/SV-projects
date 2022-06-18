@@ -6,6 +6,7 @@ class apb_bus_env `APB_PARAM_DECL extends uvm_env;
   virtual apb_bus_interface `APB_PARAM_LIST vif;
   apb_master_agent `APB_PARAM_LIST	mstr_agent;
   apb_slave_agent	`APB_PARAM_LIST slv_agent;
+  apb_bus_monitor	`APB_PARAM_LIST monitor;
 
   `uvm_component_utils(apb_bus_env `APB_PARAM_LIST )
   
@@ -15,12 +16,13 @@ class apb_bus_env `APB_PARAM_DECL extends uvm_env;
 
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-	`uvm_info(get_full_name(),"BUILD_PHASE",UVM_NONE)
-	mstr_agent = apb_master_agent	`APB_PARAM_LIST	::type_id::create("mstr_agent",this);
-	slv_agent = apb_slave_agent	`APB_PARAM_LIST	::type_id::create("slv_agent",this);
-	
-	if(!uvm_config_db#(virtual apb_bus_interface	`APB_PARAM_LIST	)::get(this,"","vif",vif))
-		`uvm_fatal("NOVIF",{"virtual interface must be set for: ",get_full_name(),".vif"});
+	  `uvm_info(get_full_name(),"BUILD_PHASE",UVM_NONE)
+	  mstr_agent = apb_master_agent	`APB_PARAM_LIST	::type_id::create("mstr_agent",this);
+	  slv_agent = apb_slave_agent	`APB_PARAM_LIST	::type_id::create("slv_agent",this);
+	  monitor = apb_bus_monitor	`APB_PARAM_LIST	::type_id::create("monitor",this);
+	  
+	  if(!uvm_config_db#(virtual apb_bus_interface	`APB_PARAM_LIST	)::get(this,"","vif",vif))
+	  	`uvm_fatal("NOVIF",{"virtual interface must be set for: ",get_full_name(),".vif"});
   endfunction
   
   function void connect_phase(uvm_phase phase);

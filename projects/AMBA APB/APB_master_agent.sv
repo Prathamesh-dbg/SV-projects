@@ -5,7 +5,7 @@ typedef class apb_bus_env;
 class apb_master_agent `APB_PARAM_DECL extends uvm_agent;
   
   apb_master_driver	`APB_PARAM_LIST	mstr_drv;
-  apb_master_monitor `APB_PARAM_LIST	mstr_mon;
+  //apb_master_monitor `APB_PARAM_LIST	mstr_mon;
   apb_master_sequencer `APB_PARAM_LIST	mstr_seqr;
   
   virtual apb_bus_interface	`APB_PARAM_LIST	vif;
@@ -26,7 +26,7 @@ class apb_master_agent `APB_PARAM_DECL extends uvm_agent;
 		mstr_seqr = apb_master_sequencer	`APB_PARAM_LIST	::type_id::create("apb_mstr_seqr",this);
 		mstr_drv = apb_master_driver	`APB_PARAM_LIST	::type_id::create("apb_mstr_drv",this);
 	end
-	mstr_mon = apb_master_monitor	`APB_PARAM_LIST	::type_id::create("apb_mstr_mon",this);
+	//mstr_mon = apb_master_monitor	`APB_PARAM_LIST	::type_id::create("apb_mstr_mon",this);
 	
 	if(!uvm_config_db#(virtual apb_bus_interface	`APB_PARAM_LIST	)::get(this,"","vif",vif))
 		`uvm_fatal("NOVIF",{"virtual interface must be set for: ",get_full_name(),".vif"});

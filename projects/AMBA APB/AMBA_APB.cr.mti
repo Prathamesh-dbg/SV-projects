@@ -2,6 +2,10 @@
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 ** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.2c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 
+** Warning: APB_common_definitions.sv(39): (vlog-2643) Unterminated string literal continues onto next line.
+
+** Warning: APB_common_definitions.sv(39): (vlog-2643) Unterminated string literal continues onto next line.
+
 ** Warning: APB_master_driver.sv(4): (vlog-2181) Use of a parameterized class apb_seq_item as a type creates a default specialization.
 
 ** Warning: APB_master_sequencer.sv(4): (vlog-2181) Use of a parameterized class apb_seq_item as a type creates a default specialization.
@@ -10,9 +14,9 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 ** Warning: APB_master_sequencer.sv(6): (vlog-2643) Unterminated string literal continues onto next line.
 
-** Warning: APB_master_monitor.sv(6): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: APB_master_monitor.sv(9): (vlog-2643) Unterminated string literal continues onto next line.
 
-** Warning: APB_master_monitor.sv(6): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: APB_master_monitor.sv(9): (vlog-2643) Unterminated string literal continues onto next line.
 
 ** Warning: APB_master_agent.sv(15): (vlog-2643) Unterminated string literal continues onto next line.
 
@@ -64,7 +68,7 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 ** Warning: APB_sequences.sv(7): (vlog-2181) Use of a parameterized class apb_seq_item as a type creates a default specialization.
 
 
-} {43.0 44.0 45.0 47.0 48.0 50.0 51.0 53.0 54.0 55.0} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/AMBA APB/APB_bus_configuration.sv} {0 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/AMBA APB/APB_bus_configuration.sv}
+} {47.0 48.0 49.0 51.0 52.0 54.0 55.0 57.0 58.0 59.0} {}} {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/AMBA APB/APB_bus_configuration.sv} {0 {vlog -work work -vopt -sv {C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/AMBA APB/APB_bus_configuration.sv}
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 ** Error: C:/Users/prath/OneDrive/Desktop/WORK ARENA/SV-projects/projects/AMBA APB/APB_bus_configuration.sv(4): (vlog-2163) Macro `APB_PARAM_DECL is undefined.
 

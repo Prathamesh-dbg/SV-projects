@@ -149,6 +149,8 @@ class random_valid_ready_test extends apb_base_test;
   virtual function void build_phase (uvm_phase phase);
     super.build_phase(phase);
 	  `uvm_info(get_full_name(),"BUILD_PHASE",UVM_NONE)
+    seq0=mstr_random_valid_seq::type_id::create("seq0");
+    seq1=slv_random_ready_seq::type_id::create("seq1");
   endfunction
   
   virtual function void connect_phase (uvm_phase phase);
@@ -159,9 +161,6 @@ class random_valid_ready_test extends apb_base_test;
   virtual task run_phase (uvm_phase phase);
     `uvm_info(get_full_name(),"RUN_PHASE",UVM_NONE)
     phase.raise_objection(this);
-    
-    seq0=mstr_random_valid_seq::type_id::create("seq0");
-    seq1=slv_random_ready_seq::type_id::create("seq1");
     
     fork
       seq0.start(apb_env.mstr_agent.mstr_seqr);

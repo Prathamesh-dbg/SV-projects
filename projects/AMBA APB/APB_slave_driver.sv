@@ -5,6 +5,8 @@ class apb_slave_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
   
   virtual apb_bus_interface	`APB_PARAM_LIST	vif;
   apb_bus_configuration `APB_PARAM_LIST cfg;
+  
+  logic [APB_PDATA_WIDTH-1:0] mem [APB_PADDR_WIDTH-1:0];
 
   `uvm_component_param_utils(apb_slave_driver `APB_PARAM_LIST )
   
@@ -41,6 +43,8 @@ class apb_slave_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
             vif.PREADY <= '0;
             vif.PRDATA <= '0;
             vif.PSLVERR <= '0;
+            foreach(mem[i])
+              mem[i] <= '0;
             wait(vif.PRESETn==1);
           end
       end
@@ -56,11 +60,12 @@ class apb_slave_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
     if(req.wr_rd == WRITE)
     begin
       vif.PREADY <= 1'b1;
+      mem[vif.PADDR] <= vif.PWDATA;
     end
     else
     begin
       vif.PREADY <= 1'b1;
-      vif.PRDATA <= req.data;
+      vif.PRDATA <= mem[vif.PADDR];
     end
 
     if(vif.PADDR inside {[cfg.slv_start_addr:cfg.slv_end_addr]})

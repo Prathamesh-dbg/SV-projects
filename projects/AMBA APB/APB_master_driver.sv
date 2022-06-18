@@ -42,6 +42,7 @@ class apb_master_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
             vif.PWRITE  <= '0;
             vif.PSEL    <= '0;
             vif.PPROT   <= '0;
+            vif.PSTRB   <= '0;
             vif.PENABLE <= '0;
             vif.PWDATA  <= '0;
             wait(vif.PRESETn==1);
@@ -57,13 +58,17 @@ class apb_master_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
     vif.PWRITE  <= (req.wr_rd==WRITE)? 1'b1: 1'b0;
     vif.PSEL    <= 1'b1;
     vif.PPROT   <= req.prot;
+    vif.PSTRB   <= '0;
     vif.PENABLE <= 1'b0;
     
     @(posedge vif.PCLK);           //START OF ACCESS PHASE
     vif.PSEL  <= 1'b1;
     vif.PENABLE <= 1'b1;
     if(req.wr_rd==WRITE)
+    begin
       vif.PWDATA <= req.data;
+      vif.PSTRB   <= req.wstrb;
+    end
     
     @(posedge vif.PCLK);           //END OF ACCESS PHASE
     wait(vif.PREADY)
@@ -73,6 +78,7 @@ class apb_master_driver `APB_PARAM_DECL extends uvm_driver#(apb_seq_item);
     vif.PWRITE  <= '0;
     vif.PSEL    <= '0;
     vif.PPROT   <= '0;
+    vif.PSTRB   <= '0;
     vif.PENABLE <= '0;
     vif.PWDATA  <= '0;
   endtask
